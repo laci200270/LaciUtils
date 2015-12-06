@@ -8,7 +8,7 @@ namespace LaciUtils
 {
     public class ConsoleUtils
     {
-        private static int readNumber()
+        public static int readNumber()
         {
             bool canRun = true;
             int returnable = 0;
@@ -27,13 +27,13 @@ namespace LaciUtils
             }
             return returnable;
         }
-        private static int readNumber(String message)
+        public static int readNumber(String message)
         {
             Console.Write(message + ": ");
             return readNumber();
 
         }
-        private static bool isNumber(String str)
+        public static bool isNumber(String str)
         {
             try
             {
